@@ -11,19 +11,8 @@ html {
   font-size: 10px;
 }
 
-.main {
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  min-height: 600px;
-  background: url(../img/amaury-gutierrez-725210-unsplash.jpg) no-repeat center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-}
+
+/* header menu and small menu */
 
 .logo-container {
   margin-top: 0;
@@ -101,119 +90,6 @@ html {
   font-weight: bold;
 }
 
-.fa {
-  z-index: 2;
-  padding: 20px;
-  font-size: 50px !important;
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  color: yellow;
-}
-
-.main-text {
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
-}
-
-.main-text span {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 30px;
-  text-transform: uppercase;
-}
-
-.main-text .message {
-  font-size: 8rem;
-  margin: 0;
-}
-
-.main-text-container {
-  width: 80%;
-  display: flex;
-}
-
-.underline {
-  width: 100%;
-  height: 1rem;
-  background-color: yellow;
-}
-
-.mission {
-  min-height: 600px;
-  flex-basis: fit-content;
-}
-.mission-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.mission-img {
-  height: 100vh;
-  width: 50%;
-}
-.mission-text-container {
-  width: 50%;
-  height: 100vh;
-  border: red 1px solid;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-flow: column;
-  align-items: center;
-}
-
-.mission-logo {
-  height: 150px;
-  width: 150px;
-}
-
-.mission-text {
-  width: 50%;
-  position: relative;
-  display: flex;
-  justify-content: right;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.mission-text h2 {
-  font-size: 5rem;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-.webelive {
-  flex-basis: fit-content;
-  min-height: 600px;
-}
-.webelive-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-.webelive-img {
-  width: 500px;
-  height: 100vh;
-  object-fit: cover;
-}
-.webelive-text-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex-flow: column;
-  align-items: flex-end;
-  margin-right: 20px;
-}
-
 .m-menu-link {
   display: none;
   position: fixed;
@@ -268,6 +144,172 @@ html {
 .close-pointer:hover {
   cursor: pointer;
 }
+
+
+/* main page */
+
+.main {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  background: url(../img/amaury-gutierrez-725210-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.fa {
+  z-index: 2;
+  padding: 20px;
+  font-size: 50px !important;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: yellow;
+}
+
+.main-text {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.main-text span {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.main-text .message {
+  font-size: 8rem;
+  margin: 0;
+}
+
+.main-text-container {
+  width: 80%;
+  display: flex;
+}
+
+/* mission */
+
+.mission {
+  flex-basis: fit-content;
+}
+.mission-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start ;
+  position: relative;
+}
+.mission-img {
+  object-fit: cover;
+  height: 100vh;
+  width: 50%;
+}
+.mission-text-container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mission-text {
+  margin-top: 90px;
+  margin-right: 40px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mission-text h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.mission-text ul {
+  margin: 0;
+}
+
+.mission-description {
+  font-size: 1.7rem;
+}
+
+.mission-title {
+  font-weight: bolder;
+}
+
+.mission-quote{
+  font-style: italic;
+}
+
+/* we belive */
+
+.webelive {
+  flex-basis: fit-content;
+  min-height: 600px;
+}
+.webelive-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+.webelive-img {
+  object-fit: cover;
+  height: 100vh;
+  width: 50%;
+}
+.webelive-text-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.webelive-text-container h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.webelive-text {
+  margin-top: 90px;
+  margin-left: 40px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.webelive-description {
+  margin: 0;
+  margin-right: 20px;
+  font-size: 1.7rem;
+}
+
+/* sermons */
 
 .sermons {
   display: flex;
@@ -331,6 +373,8 @@ html {
   font-weight: lighter;
   color: #ffffff;
 }
+
+/* missioners */
 
 .missioners {
   flex-basis: fit-content;
@@ -399,6 +443,9 @@ html {
   flex-direction: column;
 }
 
+
+/* podcasts */
+
 .podcasts {
   flex-basis: fit-content;
   background-color: #1f2c30;
@@ -442,6 +489,8 @@ html {
 .podcast-card {
   margin: 2rem;
 }
+
+/* contacts */
 
 .contacts {
   height: 100vh;
@@ -512,6 +561,9 @@ html {
   text-transform: uppercase;
 }
 
+
+/* go up arrow */
+
 #material-icons {
   position: fixed;
   font-weight: lighter;
@@ -529,4 +581,13 @@ html {
 
 #material-icons:hover {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* addition elements */
+
+.underline {
+  width: 100%;
+  height: 1rem;
+  background-color: yellow;
 }

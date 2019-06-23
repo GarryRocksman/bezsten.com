@@ -9,16 +9,18 @@
     font-size: 8px;
   }
 
+  .webelive-img,
+  .mission-img {
+    height: 110vh;
+  }
+
   .visible-lg {
     display: none;
   }
   .m-menu-link {
     display: block;
   }
-  .mission-img,
-  .mission-text-container {
-    width: 500px;
-  }
+
 }
 
 @media (max-width: 640px) {
@@ -45,7 +47,7 @@
   }
   .webelive-text-container,
   .mission-text-container {
-    width: 90%;
+    width: 100%;
   }
   .headline-description {
     height: 70vh;
