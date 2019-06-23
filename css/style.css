@@ -1,0 +1,532 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+html {
+  font-size: 10px;
+}
+
+.main {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  background: url(../img/amaury-gutierrez-725210-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-container {
+  margin-top: 0;
+  margin: 0.1rem;
+  z-index: 10000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: fixed;
+  background-color: white;
+}
+
+.logo {
+  z-index: 10000000;
+  width: 5rem;
+  height: 5rem;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 12vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000;
+}
+.menu-background {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 12vh;
+  width: 100%;
+  background-color: yellow;
+  position: fixed;
+  z-index: 10000;
+  opacity: 0.99;
+}
+
+.menu {
+  top: 2rem;
+  left: 8rem;
+  width: 70%;
+  z-index: 100000000;
+  position: fixed;
+}
+
+.menu {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+#menu-link {
+  color: #1f2c30;
+}
+.menu-link {
+  margin: 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: white;
+  text-decoration: none;
+}
+.menu-link:hover {
+  font-weight: bold;
+}
+
+.fa {
+  z-index: 2;
+  padding: 20px;
+  font-size: 50px !important;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: yellow;
+}
+
+.main-text {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.main-text span {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.main-text .message {
+  font-size: 8rem;
+  margin: 0;
+}
+
+.main-text-container {
+  width: 80%;
+  display: flex;
+}
+
+.underline {
+  width: 100%;
+  height: 1rem;
+  background-color: yellow;
+}
+
+.mission {
+  min-height: 600px;
+  flex-basis: fit-content;
+}
+.mission-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.mission-img {
+  height: 100vh;
+  width: 50%;
+}
+.mission-text-container {
+  width: 50%;
+  height: 100vh;
+  border: red 1px solid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column;
+  align-items: center;
+}
+
+.mission-logo {
+  height: 150px;
+  width: 150px;
+}
+
+.mission-text {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mission-text h2 {
+  font-size: 5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.webelive {
+  flex-basis: fit-content;
+  min-height: 600px;
+}
+.webelive-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.webelive-img {
+  width: 500px;
+  height: 100vh;
+  object-fit: cover;
+}
+.webelive-text-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-flow: column;
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+.m-menu-link {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 90%;
+  z-index: 10000000;
+}
+
+#fa-bars {
+  width: 40px;
+  font-size: 4rem !important;
+  color: white;
+}
+
+.m-m {
+  color: #1f2c30;
+}
+
+.m-menu {
+  z-index: 100000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  list-style: none;
+  font-size: 5rem;
+  line-height: 6rem;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1000000000;
+  margin-top: 0;
+  transition: 0.2c;
+  transform: translateX(100%);
+}
+.m-menu__active {
+  transform: translateX(0%);
+}
+
+.close-pointer {
+  z-index: 10000;
+  position: relative;
+  font-size: 10rem;
+  font-weight:lighter;
+  color: #ffffff;
+}
+
+.close-pointer:hover {
+  cursor: pointer;
+}
+
+.sermons {
+  display: flex;
+  flex-basis: fit-content;
+  min-height: 600px;
+  background-color: #1f2c30;
+}
+
+.headline-container h1 {
+  margin: 0;
+  font-size: 5rem;
+  color: white;
+  font-weight: normal;
+}
+
+.sermons-container {
+  padding-top: 15vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sermons-table {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sermon-plase {
+  margin: 2rem;
+  height: 200px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sermon-plase:hover {
+  border: 1px solid yellow;
+  border-radius: 2rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sermon-plase h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: yellow;
+}
+
+.sermon-plase p {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+.missioners {
+  flex-basis: fit-content;
+}
+.missionery-container {
+  padding-top: 15vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.missioney-cards {
+  margin: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.missionery-headline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.missionery-headline h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+}
+
+.missionery-card {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  margin: 5rem;
+}
+
+.missionery-card:hover {
+  border: 1px solid yellow;
+  border-radius: 2rem;
+  transition: 0.5s;
+}
+
+.missionery-card img {
+  width: 150px;
+  height: 150px;
+}
+
+.missionary-description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.podcasts {
+  flex-basis: fit-content;
+  background-color: #1f2c30;
+}
+
+.podcasts-container {
+  padding-top: 15vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.podcasts-headline {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.podcasts-headline h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin: 0;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.podcasts-cards-container {
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.podcast-card {
+  margin: 2rem;
+}
+
+.contacts {
+  height: 100vh;
+  min-height: 600px;
+  background: url(../img/delfi-de-la-rua-106046-unsplash.jpg) no-repeat center;
+  flex-basis: fit-content;
+}
+
+.contacts-overlay {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: black;
+  opacity: 0.7;
+}
+
+.contacts-container {
+  padding-top: 15vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.headline-description {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.contacts-headline {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.contacts-headline h1 {
+  font-weight: normal;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+.headline-description h2 {
+  font-weight: normal;
+  font-size: 3rem;
+  color: yellow;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.headline-description p {
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+#material-icons {
+  position: fixed;
+  font-weight: lighter;
+  font-size: 10rem;
+  z-index: 10000000;
+  top: 88vh;
+  left: 92%;
+  color: yellow;
+  cursor: pointer;
+}
+
+.arrow-up {
+  display: none;
+}
+
+#material-icons:hover {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
