@@ -8,6 +8,10 @@
   html {
     font-size: 8px;
   }
+  
+  #material-icons {
+    left: 90%;
+  }
 
   .webelive-img,
   .mission-img {
@@ -26,6 +30,10 @@
 @media (max-width: 640px) {
   html {
     font-size: 8px;
+  }
+
+  #material-icons {
+    left: 85%;
   }
 
   html h1 {
