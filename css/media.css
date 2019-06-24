@@ -20,6 +20,9 @@
     height: 110vh;
   }
 
+  .languages {
+    right: 40%;
+  }
   .visible-lg {
     display: none;
   }

@@ -67,7 +67,6 @@ html {
 }
 
 .menu {
-  top: 20px;
   left: 80px;
   width: 70%;
   z-index: 100000000;
@@ -181,13 +180,12 @@ html {
   align-items: center;
   flex-direction: row;
   position: absolute;
-  top: 22px;
   right: 20px;
-  font-size: 1.5rem;
+  font-size: 15px;
   border: 1px solid white;
   border-radius: 20px;
-  width: 9rem;
-  height: 3rem;
+  width: 90px;
+  height: 30px;
 }
 
 /* .languages:hover {
@@ -309,13 +307,13 @@ html {
   font-style: italic;
 }
 
-/* we belive */
+/* we believe */
 
-.webelive {
+.webelieve {
   flex-basis: fit-content;
   min-height: 600px;
 }
-.webelive-container {
+.webelieve-container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -323,19 +321,19 @@ html {
   align-items: flex-start;
   position: relative;
 }
-.webelive-img {
+.webelieve-img {
   object-fit: cover;
   height: 100vh;
   width: 50%;
 }
-.webelive-text-container {
+.webelieve-text-container {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
 }
-.webelive-text-container h2 {
+.webelieve-text-container h2 {
   margin: 0;
   margin-bottom: 30px;
   font-size: 5rem;
@@ -343,7 +341,7 @@ html {
   text-transform: uppercase;
 }
 
-.webelive-text {
+.webelieve-text {
   margin-top: 100px;
   margin-left: 40px;
   margin-right: 40px;
@@ -354,15 +352,15 @@ html {
   align-items: flex-start;
 }
 
-.webelive-description {
+.webelieve-description {
   margin: 0;
   margin-right: 20px;
   font-size: 1.7rem;
 }
 
-/* sermons */
+/* services */
 
-.sermons {
+.services {
   display: flex;
   flex-basis: fit-content;
   min-height: 600px;
@@ -376,7 +374,7 @@ html {
   font-weight: normal;
 }
 
-.sermons-container {
+.services-container {
   padding-top: 100px;
   position: relative;
   display: flex;
@@ -385,7 +383,7 @@ html {
   flex-direction: column;
 }
 
-.sermons-table {
+.services-table {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -394,7 +392,7 @@ html {
   flex-wrap: wrap;
 }
 
-.sermon-plase {
+.service-place {
   margin: 2rem;
   height: 200px;
   width: 300px;
@@ -405,20 +403,20 @@ html {
   flex-direction: column;
 }
 
-.sermon-plase:hover {
+.service-place:hover {
   border: 1px solid yellow;
   border-radius: 2rem;
   transition: 0.5s;
   cursor: pointer;
 }
 
-.sermon-plase h3 {
+.service-place h3 {
   font-size: 3rem;
   font-weight: normal;
   color: yellow;
 }
 
-.sermon-plase p {
+.service-place p {
   margin: 0.5rem;
   font-size: 1.7rem;
   font-weight: lighter;
@@ -649,3 +647,17 @@ html {
   height: 1rem;
   background-color: yellow;
 }
+
+/* languages */
+#en-contacts,
+#en-podcast,
+#en-missioners,
+#en-services,
+#en-webelieve,
+#en-mission,
+#en-main,
+#en-menu {
+  display: none;
+}
+
+

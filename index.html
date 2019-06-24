@@ -16,8 +16,8 @@
 <ul class="m-menu">
     <li><a href="#home" class="menu-link-m" onclick="closeMenu();">ГЛАВНАЯ</a></li>
     <li><a href="#mission" class="menu-link-m" onclick="closeMenu();">МИССИЯ</a></li>
-    <li><a href="#belive" class="menu-link-m" onclick="closeMenu();">МЫ ВЕРМ</a></li>
-    <li><a href="#sermons" class="menu-link-m" onclick="closeMenu();">СОБРАНИЯ</a></li>
+    <li><a href="#believe" class="menu-link-m" onclick="closeMenu();">МЫ ВЕРМ</a></li>
+    <li><a href="#services" class="menu-link-m" onclick="closeMenu();">СОБРАНИЯ</a></li>
     <li><a href="#missioners" class="menu-link-m" onclick="closeMenu();">МИССИОНЕРЫ</a></li>
     <li><a href="#podcasts" class="menu-link-m" onclick="closeMenu();">ПОДКАСТЫ</a></li>
     <li><a href="#contacts" class="menu-link-m" onclick="closeMenu();">КОНТАКТЫ</a></li>
@@ -26,14 +26,14 @@
   </ul>   
 <div class="menu-container">
       <div class="menu visible-lg">
-          <ul>
+          <ul id="ru-menu">
             <li><a href="#home" class="menu-link">ГЛАВНАЯ</a></li>
             <li>|</li>
             <li><a href="#mission" class="menu-link">МИССИЯ</a></li>
             <li>|</li>
-            <li><a href="#belive" class="menu-link">МЫ ВЕРИМ</a></li>
+            <li><a href="#believe" class="menu-link">МЫ ВЕРИМ</a></li>
             <li>|</li>
-            <li><a href="#sermons" class="menu-link">СОБРАНИЯ</a></li>
+            <li><a href="#services" class="menu-link">СОБРАНИЯ</a></li>
             <li>|</li>
             <li><a href="#missioners" class="menu-link">Миссионеры</a></li>
             <li>|</li>
@@ -41,6 +41,21 @@
             <li>|</li>
             <li><a href="#contacts" class="menu-link">КОНТАКТЫ</a></li>
           </ul>
+          <ul id="en-menu">
+              <li><a href="#home" class="menu-link">HOME</a></li>
+              <li>|</li>
+              <li><a href="#mission" class="menu-link">MISSION</a></li>
+              <li>|</li>
+              <li><a href="#believe" class="menu-link">WE believe</a></li>
+              <li>|</li>
+              <li><a href="#services" class="menu-link">services</a></li>
+              <li>|</li>
+              <li><a href="#missioners" class="menu-link">MISSIONERS</a></li>
+              <li>|</li>
+              <li><a href="#podcasts" class="menu-link">PODCASTS</a></li>
+              <li>|</li>
+              <li><a href="#contacts" class="menu-link">CONTACTS</a></li>
+            </ul>
         </div>
       <div class="logo-container">
         <a href="#home">
@@ -51,21 +66,28 @@
       <i id="fa-bars" class="fa fa-bars"></i></a>
       <div class="languages">
           <ul>
-            <li><a href="#russian" class="menu-link">RU</a></li>
+            <li><a href="#russian" class="menu-link" onclick="russianLanguage();">RU</a></li>
             <li>|</li>
-            <li><a href="#english" class="menu-link">EN</a></li>
+            <li><a href="#english" class="menu-link" onclick="englishLanguage();">EN</a></li>
           </ul>
         </div>
       <div class="menu-background"></div>
   </div>
 <div id="home" class="main">
       <div class="main-text-container">
-          <div class="main-text">
+          <div id="ru-main" class="main-text">
               <p class="message">ПРИХОДИ</p>
               <p class="message">ТАКОЙ, КАК ЕСТЬ</p>
               <div class="underline"></div>
               <span>церковь без стен</span>
             </div>
+
+            <div id="en-main" class="main-text">
+                <p class="message">COME</p>
+                <p class="message">SUCH AS YOU ARE</p>
+                <div class="underline"></div>
+                <span>church without walls</span>
+              </div>
       </div>
       <div class="social-buttons">
           <a href="#" class="fa fa-facebook"></a>
@@ -75,7 +97,7 @@
     </div>
 <div id="mission" class="mission">
       <div class="mission-container">
-        <div class="mission-text-container">
+        <div id="ru-mission" class="mission-text-container">
           <div class="mission-text">
               <h2>МИССИЯ
                   <div class="underline"></div>
@@ -92,18 +114,35 @@
                 <br> верных Господу учеников."</p>
           </div>
         </div>
+        <div id="en-mission" class="mission-text-container">
+            <div class="mission-text">
+                <h2>MISSION
+                    <div class="underline"></div>
+                </h2>
+                <p class="mission-description mission-title">Creation:</p>
+                <ul>
+                  <li><p class="mission-description">the churches, opened to the society</p></li>
+                  <li><p class="mission-description">the churches, without "church" subculture</p></li>
+                  <li><p class="mission-description">the churches, with are focused on the gospel</p></li>
+                </ul>
+                <p class="mission-description mission-quote">
+                  " The transformation of the society begins,
+                  <br> when there will be more real,                  , 
+                  <br> faithful disciples of the Lord."</p>
+            </div>
+          </div>
         <img src="img/jon-tyson-589839-unsplash.jpg" alt="" class="mission-img">
       </div>
     </div>
-<div id="belive" class="webelive">
-          <div class="webelive-container">
-              <img src="img/paul-zoetemeijer-1524389-unsplash.jpg" alt="" class="webelive-img">
-            <div class="webelive-text-container">
-              <div class="webelive-text">
+<div id="believe" class="webelieve">
+          <div class="webelieve-container">
+              <img src="img/paul-zoetemeijer-1524389-unsplash.jpg" alt="" class="webelieve-img">
+            <div id="ru-webelieve" class="webelieve-text-container">
+              <div class="webelieve-text">
                   <h2>МЫ ВЕРИМ
                       <div class="underline"></div>
                   </h2>
-<ol class="webelive-description">
+<ol class="webelieve-description">
   <li>
     <p> Мы верим, что все люди несчастны, так как живут автономно от Бога. 
       Это является грехом. Как следствие мы несчастны и виновны перед Святым Богом!</p>
@@ -134,50 +173,124 @@
 </ol>               
               </div>
             </div>
+            <div id="en-webelieve" class="webelieve-text-container">
+                <div class="webelieve-text">
+                    <h2>WE BELIEVE
+                        <div class="underline"></div>
+                    </h2>
+  <ol class="webelieve-description">
+    <li>
+      <p> We believe that all people are unhappy, because they live autonomously from God.
+    his is a sin. As a result, we are unhappy and guilty before Holy God!</p>
+    </li>
+    <li>
+      <p>Jesus Christ, being God and the second person of the Trinity, became a man,
+                   born of the Virgin Mary (the Incarnation happened).
+                   He died a shameful and terrible death to restore our connection with God.
+                   and forgave our sins.</p>
+    </li>
+    <li>
+      <p>Everyone who believes in Jesus and becomes His follower
+                   receives the sin forgiveness  and gets the sens of the life.</p>
+    </li>
+    <li>
+      <p>Every Christian is called to be part of the local community of Christians (churches).</p>
+    </li>
+    <li>
+      <p>In the church, we learn to love God, love other Christians, and love ones,
+                   who do not share our Christian views.</p>
+    </li>
+    <li>
+      <p>We are called not to close ourselves, but to do good deeds.
+                   and proclaim the Good News of the death and resurrection of Jesus Christ
+                   (Gospel, thus serving the city where we live.)
+        </p>
+    </li>
+  </ol>               
+                </div>
+              </div>
           </div>
     </div>      
-<div id="sermons" class="sermons">
-            <div class="sermons-container">
+<div id="services" class="services">
+            <div id="en-services" class="services-container">
               <div class="headline-container">
-                  <h1>СОБРАНИЯ</h1>
+                  <h1>SERVICES</h1>
                   <div class="underline"></div>
               </div>
-              <div class="sermons-table">
-                <div class="sermon-plase">
-                  <h3>Мирноград</h3>
-                  <p>Время и место собраний</p>
-                  <p>Контактные данные</p>
+              <div class="services-table">
+                <div class="service-place">
+                  <h3>Myrnohrad</h3>
+                  <p>Place and time of service</p>
+                  <p>contacts</p>
                 </div>
-                <div class="sermon-plase">
-                  <h3>Покровск</h3>
-                  <p>Время и место собраний</p>
-                  <p>Контактные данные</p>
+                <div class="service-place">
+                  <h3>Pokrovsk</h3>
+                  <p>Place and time of service</p>
+                  <p>contacts</p>
                 </div>
-                <div class="sermon-plase">
-                  <h3>Щевченко</h3>
-                  <p>Время и место собраний</p>
-                  <p>Контактные данные</p>
+                <div class="service-place">
+                  <h3>Shevchenko</h3>
+                  <p>Place and time of service</p>
+                  <p>contacts</p>
                 </div>
-                <div class="sermon-plase">
-                  <h3>Новогродовка</h3>
-                  <p>Время и место собраний</p>
-                  <p>Контактные данные</p>
+                <div class="service-place">
+                  <h3>Novohrodovka</h3>
+                  <p>Place and time of service</p>
+                  <p>contacts</p>
                 </div>
-                <div class="sermon-plase">
-                  <h3>Авдеевка</h3>
-                  <p>Время и место собраний</p>
-                  <p>Контактные данные</p>
+                <div class="service-place">
+                  <h3>Avdeevka</h3>
+                  <p>Place and time of service</p>
+                  <p>contacts</p>
                 </div>
-                <div class="sermon-plase">
-                  <h3>Очеретино</h3>
-                  <p>Время и место собраний</p>
-                  <p>Контактные данные</p>
+                <div class="service-place">
+                  <h3>Ocheretyno</h3>
+                  <p>Place and time of service</p>
+                  <p>contacts</p>
                 </div>
               </div>
             </div>
+            <div id="ru-services" class="services-container">
+                <div class="headline-container">
+                    <h1>services</h1>
+                    <div class="underline"></div>
+                </div>
+                <div class="services-table">
+                  <div class="service-place">
+                    <h3>Мирноград</h3>
+                    <p>Время и место собраний</p>
+                    <p>Контактные данные</p>
+                  </div>
+                  <div class="service-place">
+                    <h3>Покровск</h3>
+                    <p>Время и место собраний</p>
+                    <p>Контактные данные</p>
+                  </div>
+                  <div class="service-place">
+                    <h3>Шевченко</h3>
+                    <p>Время и место собраний</p>
+                    <p>Контактные данные</p>
+                  </div>
+                  <div class="service-place">
+                    <h3>Новогродовка</h3>
+                    <p>Время и место собраний</p>
+                    <p>Контактные данные</p>
+                  </div>
+                  <div class="service-place">
+                    <h3>Авдеевка</h3>
+                    <p>Время и место собраний</p>
+                    <p>Контактные данные</p>
+                  </div>
+                  <div class="service-place">
+                    <h3>Очеретино</h3>
+                    <p>Время и место собраний</p>
+                    <p>Контактные данные</p>
+                  </div>
+                </div>
+              </div>
     </div>
 <div id="missioners" class="missioners">
-  <div class="missionery-container">
+  <div id="ru-missioners" class="missionery-container">
     <div class="missionery-headline">
       <h1>миссионеры</h1>
       <div class="underline"></div>
@@ -206,11 +319,41 @@
         </div>
     </div>
   </div>
+  <div id="en-missioners" class="missionery-container">
+      <div class="missionery-headline">
+        <h1>Missioners</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="missioney-cards">
+        <div class="missionery-card">
+          <img src="img/user-placeholder-circle-1.png" alt="missioner-name" class="missionery-img">
+          <div class="missionary-description">
+            <h2 class="missionary-descrioption-title">name and position</h2>
+            <p class="missinary-description-text">Description text, and social media</p>
+          </div>
+        </div>
+        <div class="missionery-card">
+          <img src="img/user-placeholder-circle-1.png" alt="missioner-name" class="missionery-img">
+          <div class="missionary-description">
+            <h2 class="missionary-descrioption-title">name and position</h2>
+            <p class="missinary-description-text">Description text, and social media</p>
+          </div>
+        </div>
+        <div class="missionery-card">
+            <img src="img/user-placeholder-circle-1.png" alt="missioner-name" class="missionery-img">
+            <div class="missionary-description">
+              <h2 class="missionary-descrioption-title">name and position</h2>
+              <p class="missinary-description-text">Description text, and social media</p>
+            </div>
+          </div>
+      </div>
+    </div>
     </div>
 <div id="podcasts"class="podcasts">
   <div class="podcasts-container">
     <div class="podcasts-headline">
-      <h1 class="podcast-title">Подкасты</h1>
+      <h1 id="ru-podcast" class="podcast-title">Подкасты</h1>
+      <h1 id="en-podcast" class="podcast-title">Podcasts</h1>
         <div class="underline"></div>
     </div>
     <div class="podcasts-cards-container">
@@ -227,7 +370,7 @@
   </div>
     </div>
 <div id="contacts" class="contacts">
-  <div class="contacts-container">
+  <div id="ru-contacts" class="contacts-container">
       <div class="contacts-overlay"></div>
     <div class="contacts-headline">
       <h1 class="contacts-title">КОНТАКТЫ
@@ -243,6 +386,22 @@
       <p>Контактный телефон церкви</p>
     </div>
     </div>
+    <div id="en-contacts" class="contacts-container">
+        <div class="contacts-overlay"></div>
+      <div class="contacts-headline">
+        <h1 class="contacts-title">Contacts
+            <div class="underline"></div>
+        </h1>   
+      </div>
+      <div class="headline-description">
+        <h2 class="adress">Church office</h2>
+        <p>Address of church office</p>
+        <h2 class="email">Email</h2>
+        <p>Email of church</p>
+        <h2 class="telephone">Telephone</h2>
+        <p>Telephone of the church</p>
+      </div>
+      </div>
 </div>
 
 <div class="arrow-up">
