@@ -14,15 +14,15 @@
       rel="stylesheet">
   <body>
 <ul class="m-menu">
-    <li><a href="#home" class="menu-link-m">ГЛАВНАЯ</a></li>
-    <li><a href="#mission" class="menu-link-m">МИССИЯ</a></li>
-    <li><a href="#belive" class="menu-link-m">МЫ ВЕРМ</a></li>
-    <li><a href="#sermons" class="menu-link-m">СОБРАНИЯ</a></li>
-    <li><a href="#missioners" class="menu-link-m">МИССИОНЕРЫ</a></li>
-    <li><a href="#podcasts" class="menu-link-m">ПОДКАСТЫ</a></li>
-    <li><a href="#contacts" class="menu-link-m">КОНТАКТЫ</a></li>
-    <div class="close-menu close-pointer">&times</div>
-    <div class="m-menu-overlay"></div>
+    <li><a href="#home" class="menu-link-m" onclick="closeMenu();">ГЛАВНАЯ</a></li>
+    <li><a href="#mission" class="menu-link-m" onclick="closeMenu();">МИССИЯ</a></li>
+    <li><a href="#belive" class="menu-link-m" onclick="closeMenu();">МЫ ВЕРМ</a></li>
+    <li><a href="#sermons" class="menu-link-m" onclick="closeMenu();">СОБРАНИЯ</a></li>
+    <li><a href="#missioners" class="menu-link-m" onclick="closeMenu();">МИССИОНЕРЫ</a></li>
+    <li><a href="#podcasts" class="menu-link-m" onclick="closeMenu();">ПОДКАСТЫ</a></li>
+    <li><a href="#contacts" class="menu-link-m" onclick="closeMenu();">КОНТАКТЫ</a></li>
+    <div class="close-pointer" onclick="closeMenu();">&times</div>
+    <div class="m-menu-overlay" onclick="closeMenu();"></div>
   </ul>   
 <div class="menu-container">
       <div class="menu visible-lg">
@@ -47,12 +47,18 @@
             <img class="logo" src="img/download.png" alt="logo" />
           </a>
         </div>
-      <a href="#" class="m-menu-link">
+      <a href="#" class="m-menu-link" onclick="openMenu();">
       <i id="fa-bars" class="fa fa-bars"></i></a>
+      <div class="languages">
+          <ul>
+            <li><a href="#russian" class="menu-link">RU</a></li>
+            <li>|</li>
+            <li><a href="#english" class="menu-link">EN</a></li>
+          </ul>
+        </div>
       <div class="menu-background"></div>
   </div>
-<div class="main">
-  <a name="home"></a>
+<div id="home" class="main">
       <div class="main-text-container">
           <div class="main-text">
               <p class="message">ПРИХОДИ</p>
@@ -67,8 +73,7 @@
           <a href="#" class="fa fa-instagram"></a>
       </div>
     </div>
-<div class="mission">
-    <a name="mission"></a>
+<div id="mission" class="mission">
       <div class="mission-container">
         <div class="mission-text-container">
           <div class="mission-text">
@@ -90,8 +95,7 @@
         <img src="img/jon-tyson-589839-unsplash.jpg" alt="" class="mission-img">
       </div>
     </div>
-<div class="webelive">
-    <a name="belive"></a>
+<div id="belive" class="webelive">
           <div class="webelive-container">
               <img src="img/paul-zoetemeijer-1524389-unsplash.jpg" alt="" class="webelive-img">
             <div class="webelive-text-container">
@@ -132,8 +136,7 @@
             </div>
           </div>
     </div>      
-<div class="sermons">
-    <a name="sermons"></a>
+<div id="sermons" class="sermons">
             <div class="sermons-container">
               <div class="headline-container">
                   <h1>СОБРАНИЯ</h1>
@@ -173,11 +176,10 @@
               </div>
             </div>
     </div>
-<div class="missioners">
-    <a name="missioners"></a>
+<div id="missioners" class="missioners">
   <div class="missionery-container">
     <div class="missionery-headline">
-      <h1>Наши миссионеры</h1>
+      <h1>миссионеры</h1>
       <div class="underline"></div>
     </div>
     <div class="missioney-cards">
@@ -205,8 +207,7 @@
     </div>
   </div>
     </div>
-<div class="podcasts">
-    <a name="podcasts"></a>
+<div id="podcasts"class="podcasts">
   <div class="podcasts-container">
     <div class="podcasts-headline">
       <h1 class="podcast-title">Подкасты</h1>
@@ -225,13 +226,13 @@
     </div>
   </div>
     </div>
-<div class="contacts">
-    <a name="contacts"></a>
+<div id="contacts" class="contacts">
   <div class="contacts-container">
       <div class="contacts-overlay"></div>
     <div class="contacts-headline">
-      <h1 class="contacts-title">КОНТАКТЫ</h1>
-      <div class="underline"></div>
+      <h1 class="contacts-title">КОНТАКТЫ
+          <div class="underline"></div>
+      </h1>   
     </div>
     <div class="headline-description">
       <h2 class="adress">Oфис церкви</h2>
@@ -252,7 +253,7 @@
       </a>
 </div>
 
-
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="js/bezsten.js"></script>
   </body>

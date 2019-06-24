@@ -1,16 +1,11 @@
-$(function () {
-  let link = $('.m-menu-link');
-  let menu = $('.m-menu');
-  let close = $('.close-menu');
-  link.on('click', function (event) {
-    event.preventDefault();
-    menu.toggleClass('m-menu__active');
-  });
-  close.on('click', function (event) {
-    event.preventDefault();
-    menu.toggleClass('m-menu__active');
-  });
-});
+function openMenu() {
+  $('.m-menu').addClass('m-menu__active');
+}
+
+function closeMenu() {
+  $('.m-menu').removeClass('m-menu__active');
+}
+
 
 $(document).scroll(function () {
   var y = $(this).scrollTop();
@@ -32,4 +27,20 @@ $(document).scroll(function () {
   } else {
     $('.arrow-up').fadeOut();
   }
+});
+
+
+$(document).ready(function(){
+  $(".menu").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 1500);
+  });
+  $(".m-menu").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+});
 });

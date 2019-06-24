@@ -4,13 +4,15 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1010px) {
   html {
     font-size: 8px;
   }
-  
-  #material-icons {
-    left: 90%;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 8px;
   }
 
   .webelive-img,
@@ -27,17 +29,10 @@
 
 }
 
+
 @media (max-width: 640px) {
   html {
     font-size: 8px;
-  }
-
-  #material-icons {
-    left: 85%;
-  }
-
-  html h1 {
-    font-size: 3rem !important;
   }
   .visible-lg {
     display: none;
@@ -57,17 +52,10 @@
   .mission-text-container {
     width: 100%;
   }
-  .headline-description {
-    height: 70vh;
-  }
-
-  .contacts-headline {
-    height: 30vh;
-  }
 }
 
 @media (max-width: 340px) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
