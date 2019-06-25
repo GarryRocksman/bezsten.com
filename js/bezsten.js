@@ -1,8 +1,20 @@
 checkMenu();
+getLanguage();
 
 
 
 
+
+
+function getLanguage() {
+  let lang = localStorage.getItem('language');
+  if (lang !== null && lang === 'english') {
+    englishLanguage();
+  } else if (lang !== null && lang === 'russian') {
+    russianLanguage();
+  }
+
+}
 
 
 
@@ -22,6 +34,7 @@ function closeMenu() {
 }
 
 function englishLanguage() {
+  localStorage.setItem('language', 'english');
   $('#en-contacts').css('display', 'flex');
   $('#en-m-menu').css('display', 'flex');
   $('#en-podcast').css('display', 'flex');
@@ -45,6 +58,7 @@ function englishLanguage() {
 
 
 function russianLanguage() {
+  localStorage.setItem('language', 'russian');
   $('#ru-contacts').css('display', 'flex');
   $('#ru-m-menu').css('display', 'flex');
   $('#ru-podcast').css('display', 'flex');
