@@ -10,6 +10,7 @@ function closeMenu() {
 
 function englishLanguage() {
 $('#en-contacts').css('display','flex');
+$('#en-m-menu').css('display','flex');
 $('#en-podcast').css('display','flex');
 $('#en-missioners').css('display','flex');
 $('#en-services').css('display','flex');
@@ -19,6 +20,7 @@ $('#en-main').css('display','flex');
 $('#en-menu').css('display','flex');
 
 $('#ru-contacts').css('display','none');
+$('#ru-m-menu').css('display','none');
 $('#ru-podcast').css('display','none');
 $('#ru-missioners').css('display','none');
 $('#ru-services').css('display','none');
@@ -31,6 +33,7 @@ $('#ru-menu').css('display','none');
 
 function russianLanguage() {
 $('#ru-contacts').css('display','flex');
+$('#ru-m-menu').css('display','flex');
 $('#ru-podcast').css('display','flex');
 $('#ru-missioners').css('display','flex');
 $('#ru-services').css('display','flex');
@@ -40,6 +43,7 @@ $('#ru-main').css('display','flex');
 $('#ru-menu').css('display','flex');
 
 $('#en-contacts').css('display','none');
+$('#en-m-menu').css('display','none');
 $('#en-podcast').css('display','none');
 $('#en-missioners').css('display','none');
 $('#en-services').css('display','none');
