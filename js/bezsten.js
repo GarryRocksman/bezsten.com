@@ -1,4 +1,17 @@
+checkMenu();
 
+
+
+
+
+
+
+
+function checkMenu() {
+  $('body,html').animate({
+    scrollTop: 1
+  }, 0.1);
+}
 
 function openMenu() {
   $('.m-menu').addClass('m-menu__active');
@@ -9,48 +22,48 @@ function closeMenu() {
 }
 
 function englishLanguage() {
-$('#en-contacts').css('display','flex');
-$('#en-m-menu').css('display','flex');
-$('#en-podcast').css('display','flex');
-$('#en-missioners').css('display','flex');
-$('#en-services').css('display','flex');
-$('#en-webelieve').css('display','flex');
-$('#en-mission').css('display','flex');
-$('#en-main').css('display','flex');
-$('#en-menu').css('display','flex');
+  $('#en-contacts').css('display', 'flex');
+  $('#en-m-menu').css('display', 'flex');
+  $('#en-podcast').css('display', 'flex');
+  $('#en-missioners').css('display', 'flex');
+  $('#en-services').css('display', 'flex');
+  $('#en-webelieve').css('display', 'flex');
+  $('#en-mission').css('display', 'flex');
+  $('#en-main').css('display', 'flex');
+  $('#en-menu').css('display', 'flex');
 
-$('#ru-contacts').css('display','none');
-$('#ru-m-menu').css('display','none');
-$('#ru-podcast').css('display','none');
-$('#ru-missioners').css('display','none');
-$('#ru-services').css('display','none');
-$('#ru-webelieve').css('display','none');
-$('#ru-mission').css('display','none');
-$('#ru-main').css('display','none');
-$('#ru-menu').css('display','none');
+  $('#ru-contacts').css('display', 'none');
+  $('#ru-m-menu').css('display', 'none');
+  $('#ru-podcast').css('display', 'none');
+  $('#ru-missioners').css('display', 'none');
+  $('#ru-services').css('display', 'none');
+  $('#ru-webelieve').css('display', 'none');
+  $('#ru-mission').css('display', 'none');
+  $('#ru-main').css('display', 'none');
+  $('#ru-menu').css('display', 'none');
 }
 
 
 function russianLanguage() {
-$('#ru-contacts').css('display','flex');
-$('#ru-m-menu').css('display','flex');
-$('#ru-podcast').css('display','flex');
-$('#ru-missioners').css('display','flex');
-$('#ru-services').css('display','flex');
-$('#ru-webelieve').css('display','flex');
-$('#ru-mission').css('display','flex');
-$('#ru-main').css('display','flex');
-$('#ru-menu').css('display','flex');
+  $('#ru-contacts').css('display', 'flex');
+  $('#ru-m-menu').css('display', 'flex');
+  $('#ru-podcast').css('display', 'flex');
+  $('#ru-missioners').css('display', 'flex');
+  $('#ru-services').css('display', 'flex');
+  $('#ru-webelieve').css('display', 'flex');
+  $('#ru-mission').css('display', 'flex');
+  $('#ru-main').css('display', 'flex');
+  $('#ru-menu').css('display', 'flex');
 
-$('#en-contacts').css('display','none');
-$('#en-m-menu').css('display','none');
-$('#en-podcast').css('display','none');
-$('#en-missioners').css('display','none');
-$('#en-services').css('display','none');
-$('#en-webelieve').css('display','none');
-$('#en-mission').css('display','none');
-$('#en-main').css('display','none');
-$('#en-menu').css('display','none');
+  $('#en-contacts').css('display', 'none');
+  $('#en-m-menu').css('display', 'none');
+  $('#en-podcast').css('display', 'none');
+  $('#en-missioners').css('display', 'none');
+  $('#en-services').css('display', 'none');
+  $('#en-webelieve').css('display', 'none');
+  $('#en-mission').css('display', 'none');
+  $('#en-main').css('display', 'none');
+  $('#en-menu').css('display', 'none');
 }
 
 
@@ -84,17 +97,21 @@ $(document).scroll(function () {
 
 
 
-$(document).ready(function(){
-  $(".menu").on("click","a", function (event) {
-      event.preventDefault();
-      var id  = $(this).attr('href'),
-          top = $(id).offset().top;
-      $('body,html').animate({scrollTop: top}, 1500);
-  });
-  $(".m-menu").on("click","a", function (event) {
+$(document).ready(function () {
+  $(".menu").on("click", "a", function (event) {
     event.preventDefault();
-    var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top}, 1500);
-});
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
+  $(".m-menu").on("click", "a", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+      top = $(id).offset().top;
+    $('body,html').animate({
+      scrollTop: top
+    }, 1500);
+  });
 });

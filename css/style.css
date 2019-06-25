@@ -435,7 +435,6 @@ html {
 }
 
 .missioney-cards {
-  margin: 5rem;
   position: relative;
   display: flex;
   justify-content: space-around;
