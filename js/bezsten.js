@@ -24,13 +24,9 @@ function checkMenu() {
   }, 0.1);
 }
 
-//function for open mobile menu
-function openMenu() {
-  $('.m-menu').addClass('m-menu__active');
-}
-//function for close mobile menu
-function closeMenu() {
-  $('.m-menu').removeClass('m-menu__active');
+//function for open and close  mobile menu
+function openCloseMenu() {
+  $('.m-menu').toggleClass('m-menu__active');
 }
 
 //function for setting english language

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -14,27 +13,27 @@
       rel="stylesheet">
   <body>
   <ul id="ru-m-menu" class="m-menu">
-    <li><a href="#home" class="menu-link-m" onclick="closeMenu();">ГЛАВНАЯ</a></li>
-    <li><a href="#mission" class="menu-link-m" onclick="closeMenu();">МИССИЯ</a></li>
-    <li><a href="#believe" class="menu-link-m" onclick="closeMenu();">МЫ ВЕРМ</a></li>
-    <li><a href="#services" class="menu-link-m" onclick="closeMenu();">СОБРАНИЯ</a></li>
-    <li><a href="#missioners" class="menu-link-m" onclick="closeMenu();">МИССИОНЕРЫ</a></li>
-    <li><a href="#podcasts" class="menu-link-m" onclick="closeMenu();">ПОДКАСТЫ</a></li>
-    <li><a href="#contacts" class="menu-link-m" onclick="closeMenu();">КОНТАКТЫ</a></li>
-    <div class="close-pointer" onclick="closeMenu();">&times</div>
-    <div class="m-menu-overlay" onclick="closeMenu();"></div>
+    <li><a href="#home" class="menu-link-m" onclick="openCloseMenu();">ГЛАВНАЯ</a></li>
+    <li><a href="#mission" class="menu-link-m" onclick="openCloseMenu();">МИССИЯ</a></li>
+    <li><a href="#believe" class="menu-link-m" onclick="openCloseMenu();">МЫ ВЕРМ</a></li>
+    <li><a href="#services" class="menu-link-m" onclick="openCloseMenu();">СОБРАНИЯ</a></li>
+    <li><a href="#missioners" class="menu-link-m" onclick="openCloseMenu();">МИССИОНЕРЫ</a></li>
+    <li><a href="#podcasts" class="menu-link-m" onclick="openCloseMenu();">ПОДКАСТЫ</a></li>
+    <li><a href="#contacts" class="menu-link-m" onclick="openCloseMenu();">КОНТАКТЫ</a></li>
+    <div class="close-pointer" onclick="openCloseMenu();">&times</div>
+    <div class="m-menu-overlay" onclick="openCloseMenu();"></div>
   </ul>   
 
   <ul id="en-m-menu" class="m-menu">
-      <li><a href="#home" class="menu-link-m" onclick="closeMenu();">HOME</a></li>
-      <li><a href="#mission" class="menu-link-m" onclick="closeMenu();">MISSION</a></li>
-      <li><a href="#believe" class="menu-link-m" onclick="closeMenu();">WE BELIEVE</a></li>
-      <li><a href="#services" class="menu-link-m" onclick="closeMenu();">SERVICES</a></li>
-      <li><a href="#missioners" class="menu-link-m" onclick="closeMenu();">MISSIONERS</a></li>
-      <li><a href="#podcasts" class="menu-link-m" onclick="closeMenu();">PODCASTS</a></li>
-      <li><a href="#contacts" class="menu-link-m" onclick="closeMenu();">CONTACTS</a></li>
-      <div class="close-pointer" onclick="closeMenu();">&times</div>
-      <div class="m-menu-overlay" onclick="closeMenu();"></div>
+      <li><a href="#home" class="menu-link-m" onclick="openCloseMenu();">HOME</a></li>
+      <li><a href="#mission" class="menu-link-m" onclick="openCloseMenu();">MISSION</a></li>
+      <li><a href="#believe" class="menu-link-m" onclick="openCloseMenu();">WE BELIEVE</a></li>
+      <li><a href="#services" class="menu-link-m" onclick="openCloseMenu();">SERVICES</a></li>
+      <li><a href="#missioners" class="menu-link-m" onclick="openCloseMenu();">MISSIONERS</a></li>
+      <li><a href="#podcasts" class="menu-link-m" onclick="openCloseMenu();">PODCASTS</a></li>
+      <li><a href="#contacts" class="menu-link-m" onclick="openCloseMenu();">CONTACTS</a></li>
+      <div class="close-pointer" onclick="openCloseMenu();">&times</div>
+      <div class="m-menu-overlay" onclick="openCloseMenu();"></div>
     </ul>   
 <div class="menu-container">
       <div class="menu visible-lg">
@@ -74,7 +73,7 @@
             <img class="logo" src="img/download.png" alt="logo" />
           </a>
         </div>
-      <a href="#" class="m-menu-link" onclick="openMenu();">
+      <a href="#" class="m-menu-link" onclick="openCloseMenu();">
       <i id="fa-bars" class="fa fa-bars"></i></a>
       <div class="languages">
           <ul>
@@ -102,7 +101,7 @@
               </div>
       </div>
       <div class="social-buttons">
-          <a href="#" class="fa fa-facebook"></a>
+          <a href="https://www.facebook.com/MCChurchWithoutWalls/" target = "_blank"class="fa fa-facebook"></a>
           <a href="#" class="fa fa-youtube"></a>
           <a href="#" class="fa fa-instagram"></a>
       </div>
@@ -270,13 +269,17 @@
                 <div class="services-table">
                   <div class="service-place">
                     <h3>Мирноград</h3>
-                    <p>Время и место собраний</p>
-                    <p>Контактные данные</p>
+                    <p>Светлый 13. кв.33</p>
+                    <p>Суббота :</p>
+                    <p>- Собрание на 18:30</p>
+                    <p>+38(050)3925977 - Игорь</p>
                   </div>
                   <div class="service-place">
                     <h3>Покровск</h3>
-                    <p>Время и место собраний</p>
-                    <p>Контактные данные</p>
+                    <p>Солнечный, 4.</p>
+                    <p>Воскресенье :</p>
+                    <p>- Собрание в 12:00</p>
+                    <p>+38(050)6004118 - Евгений</p>
                   </div>
                   <div class="service-place">
                     <h3>Шевченко</h3>
@@ -285,18 +288,29 @@
                   </div>
                   <div class="service-place">
                     <h3>Новогродовка</h3>
-                    <p>Время и место собраний</p>
-                    <p>Контактные данные</p>
+                    <p>Молодёжная 5</p>
+                    <p>Воскресенье :</p>
+                    <p>- Cобрание на 13:00</p>
+                    <p>- Детское служение на 10:00</p>
+                    <p>+38(099)0412827 - Борис</p>
                   </div>
                   <div class="service-place">
                     <h3>Авдеевка</h3>
-                    <p>Время и место собраний</p>
-                    <p>Контактные данные</p>
+                    <p>9 квартал, 20а</p>
+                    <p>Воскресенье : </p>
+                    <p> Собрание в 14:00,</p>
+                    <p>Александр - 0956662060</p>
+                    <p>Сергей - 0992644291</p>
+                    <p>Полина - 0994729064</p>
                   </div>
                   <div class="service-place">
                     <h3>Очеретино</h3>
-                    <p>Время и место собраний</p>
-                    <p>Контактные данные</p>
+                    <p>ул. Первомайская 60/7</p>
+                    <p>Воскресенье :</p>
+                    <p>- Собрание в 10:00</p>
+                    <p>- Детское служение в  13:00</p>
+                    <p>+38(063)6272026 - Николай</p>
+                    <p>+38(099)0036615 - Дмитрий</p>
                   </div>
                 </div>
               </div>
@@ -423,6 +437,8 @@
         </i>
       </a>
 </div>
+
+
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
