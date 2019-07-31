@@ -60,3 +60,14 @@
     font-size: 10px;
   }
 }
+
+@media (max-width: 320px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+
+
+
+

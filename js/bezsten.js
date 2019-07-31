@@ -1,7 +1,15 @@
 checkMenu();
 checkLanguage();
 
+$('.moreaboutmissionerstitle').toggleClass('showitems');
 
+
+
+function togglemissioners() {
+  $('.hiddenmissioners').toggleClass('showitems');
+  $('.moreaboutmissionerstitle').toggleClass('showitems');
+  $('.lessboutmissionerstitle').toggleClass('showitems');
+}
 
 
 
@@ -41,7 +49,9 @@ function englishLanguage() {
   $('#en-mission').css('display', 'flex');
   $('#en-main').css('display', 'flex');
   $('#en-menu').css('display', 'flex');
-
+  $('#en-soundcloud').css('display', 'flex');
+  
+  $('#ru-soundcloud').css('display', 'none');
   $('#ru-contacts').css('display', 'none');
   $('#ru-m-menu').css('display', 'none');
   $('#ru-podcast').css('display', 'none');
@@ -66,7 +76,11 @@ function russianLanguage() {
   $('#ru-mission').css('display', 'flex');
   $('#ru-main').css('display', 'flex');
   $('#ru-menu').css('display', 'flex');
+  $('#ru-soundcloud').css('display', 'flex');
+ 
+  
 
+  $('#en-soundcloud').css('display', 'none');
   $('#en-contacts').css('display', 'none');
   $('#en-m-menu').css('display', 'none');
   $('#en-podcast').css('display', 'none');

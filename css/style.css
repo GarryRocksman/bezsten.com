@@ -390,7 +390,6 @@ html {
 
 .service-place {
   padding: 2rem;
-  margin: 2rem;
   width: 300px;
   min-height: 250px;
   position: relative;
@@ -476,12 +475,13 @@ html {
 }
 
 .missionery-card:hover {
-  border: 1px solid var(--main-light-color);
+  background-color: #F5F5F5;
   border-radius: 2rem;
   transition: 0.5s;
 }
 
 .missionery-card img {
+  border-radius: 50%;
   width: 150px;
   height: 150px;
 }
@@ -491,6 +491,48 @@ html {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+}
+
+.hiddenmissioners {
+  display: none;
+}
+
+.lessboutmissionerstitle {
+  padding: 0.5rem 1rem  0.5rem 1rem  ;
+  border: #1f2c30 1px solid;
+  border-radius: 25px;
+  display: none;
+}
+
+.moreaboutmissionerstitle {
+  padding: 0.5rem 1rem  0.5rem 1rem  ;
+  border: #1f2c30 1px solid;
+  border-radius: 25px;
+  display: none;
+}
+
+.showitems {
+  display: flex;
+}
+
+.moreaboutmissioners {
+  position: absolute;
+  top: 100%;
+  align-content: center;
+  cursor: pointer;
+  color: var(--main-dark-color);
+  font-size: 1.5rem;
+
+}
+.moreaboutmissioners:hover {
+ font-weight: bold;
+ color: var(--main-light-color)
+}
+
+.missinary-description-text {
+  text-align:center;
+  font-weight: normal;
+  font-size: 1.2rem;
 }
 
 /* podcasts */
@@ -541,6 +583,22 @@ html {
   margin: 2rem;
 }
 
+
+.morepodcasts {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+
+.morepodcaststitle {
+  color:var(--main-light-color);
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
 /* contacts */
 
 .contacts {
@@ -571,7 +629,7 @@ html {
 }
 
 .headline-description {
-  margin-top: 250px;
+  margin-top: 210px;
   margin-right: 20px;
   z-index: 101;
   position: relative;
@@ -619,6 +677,13 @@ html {
   text-transform: uppercase;
 }
 
+.contactslinks {
+text-decoration: none;
+}
+
+
+
+
 /* go up arrow */
 
 #material-icons {
@@ -661,6 +726,13 @@ html {
 #en-main,
 #en-menu {
   display: none;
+}
+
+
+
+/* for text decoration */
+.textbold {
+font-weight: bold !important;
 }
 
 
