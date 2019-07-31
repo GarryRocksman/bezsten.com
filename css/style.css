@@ -385,6 +385,7 @@ html {
 }
 
 .services-table {
+  margin-top: 10px;
   position: relative;
   display: flex;
   justify-content: space-around;
