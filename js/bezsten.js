@@ -105,6 +105,8 @@ $(document).scroll(function () {
     $('.languages').css('color', '#1f2c30');
     $('.languages').css('border', '#1f2c30 solid 1px');
     $('#fa-bars').css('color', '#1f2c30');
+    $('.logo').css('display', 'none');
+    $('.logo_black').css('display', 'block');
   } else {
 
     $('#fa-bars').css('color', 'white');
@@ -113,6 +115,8 @@ $(document).scroll(function () {
     $('.menu').css('color', 'white');
     $('.languages').css('color', 'white');
     $('.languages').css('border', 'white solid 1px');
+    $('.logo').css('display', 'block');
+    $('.logo_black').css('display', 'none');
   }
 
   if (y > 600) {
