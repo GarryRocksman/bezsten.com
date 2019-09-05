@@ -103,7 +103,7 @@ $(document).scroll(function () {
     $('.menu-link').css('color', '#1f2c30');
     $('.menu').css('color', '#1f2c30');
     $('.languages').css('color', '#1f2c30');
-    $('.languages').css('border', '#1f2c30 solid 1px');
+    // $('.languages').css('border', '#1f2c30 solid 1px');
     $('#fa-bars').css('color', '#1f2c30');
     $('.logo').css('display', 'none');
     $('.logo_black').css('display', 'block');
@@ -114,7 +114,7 @@ $(document).scroll(function () {
     $('.menu-link').css('color', 'white');
     $('.menu').css('color', 'white');
     $('.languages').css('color', 'white');
-    $('.languages').css('border', 'white solid 1px');
+    // $('.languages').css('border', 'white solid 1px');
     $('.logo').css('display', 'block');
     $('.logo_black').css('display', 'none');
   }
@@ -124,27 +124,4 @@ $(document).scroll(function () {
   } else {
     $('.arrow-up').fadeOut();
   }
-});
-
-
-
-//function for smooth page scrolling
-
-$(document).ready(function () {
-  $(".menu").on("click", "a", function (event) {
-    event.preventDefault();
-    var id = $(this).attr('href'),
-      top = $(id).offset().top;
-    $('body,html').animate({
-      scrollTop: top
-    }, 1500);
-  });
-  $(".m-menu").on("click", "a", function (event) {
-    event.preventDefault();
-    var id = $(this).attr('href'),
-      top = $(id).offset().top;
-    $('body,html').animate({
-      scrollTop: top
-    }, 1500);
-  });
 });

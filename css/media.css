@@ -21,7 +21,7 @@
   }
 
   .languages {
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, 0%);
   }
   .visible-lg {
@@ -63,7 +63,7 @@
 
 @media (max-width: 320px) {
   html {
-    font-size: 7px;
+    font-size: 10px;
   }
 }
 
