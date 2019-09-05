@@ -4,15 +4,22 @@
   }
 }
 
+@media (max-width: 1050px) {
+  html {
+    font-size: 8px;
+  }
+}
+
 @media (max-width: 1010px) {
   html {
     font-size: 8px;
   }
 }
 
+
 @media (max-width: 991px) {
   html {
-    font-size: 8px;
+    font-size: 7px;
   }
 
   .webelieve-img,
@@ -63,7 +70,7 @@
 
 @media (max-width: 320px) {
   html {
-    font-size: 10px;
+    font-size: 6px;
   }
 }
 
