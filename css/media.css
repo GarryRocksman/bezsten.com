@@ -60,6 +60,10 @@
   .mission-text-container {
     width: 100%;
   }
+  .invitelink h1{
+    font-size: 2rem;
+  }
+
 }
 
 @media (max-width: 340px) {

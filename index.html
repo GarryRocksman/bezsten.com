@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
   <body>
+      <div class="maincontent">   
   <ul id="ru-m-menu" class="m-menu">
     <li><a href="#home" class="menu-link-m" onclick="openCloseMenu();">ГЛАВНАЯ</a></li>
     <li><a href="#mission" class="menu-link-m" onclick="openCloseMenu();">МИССИЯ</a></li>
@@ -41,6 +42,7 @@
 <div class="menu-container">
       <div class="menu visible-lg">
           <ul id="ru-menu">
+            <li>|</li>
             <li><a href="#home" class="menu-link">ГЛАВНАЯ</a></li>
             <li>|</li>
             <li><a href="#mission" class="menu-link">МИССИЯ</a></li>
@@ -56,8 +58,10 @@
             <li><a href="#podcasts" class="menu-link">ПОДКАСТЫ</a></li>
             <li>|</li>
             <li><a href="#contacts" class="menu-link">КОНТАКТЫ</a></li>
+            <li>|</li>
           </ul>
           <ul id="en-menu">
+              <li>|</li>
               <li><a href="#home" class="menu-link">HOME</a></li>
               <li>|</li>
               <li><a href="#mission" class="menu-link">MISSION</a></li>
@@ -73,6 +77,7 @@
               <li><a href="#podcasts" class="menu-link">PODCASTS</a></li>
               <li>|</li>
               <li><a href="#contacts" class="menu-link">CONTACTS</a></li>
+              <li>|</li>
             </ul>
         </div>
       <div class="logo-container">
@@ -92,14 +97,23 @@
         </div>
       <div class="menu-background"></div>
   </div>
+
 <div id="home" class="main">
       <div class="main-text-container">
-          <div id="ru-main" class="main-text">
-              <p class="message">ПРИХОДИ</p>
-              <p class="message">ТАКОЙ, КАК ЕСТЬ</p>
-              <div class="underline"></div>
-              <span>церковь без стен</span>
+          <div id="ru-main" class="invitelink main-text">
+              <p>Желаешь стать частью Божьей работы на Донбасcе?</p>
+              <h1 >Краткосрочные миссионерские поездки на восток Украины</h1>
+              <button class="invitelink_button" onclick="toggleinvite();">
+                  ПРИСОЕДИНИТЬСЯ
+                </button>
             </div>
+
+            <!-- <div id="ru-main" class="main-text">
+                <p class="message">ПРИХОДИ</p>
+                <p class="message">ТАКОЙ, КАК ЕСТЬ</p>
+                <div class="underline"></div>
+                <span>церковь без стен</span>
+              </div> -->
 
             <div id="en-main" class="main-text">
                 <p class="message">COME</p>
@@ -108,6 +122,9 @@
                 <span>Church Without Walls</span>
               </div>
       </div>
+
+      
+
       <div class="social-buttons">
           <a href="https://www.facebook.com/MCChurchWithoutWalls/" target = "_blank" class="fa fa-facebook"></a>
           <a href="https://www.youtube.com/channel/UCkB0CSuVJtSafDrMZeVUwQw" target = "_blank" class="fa fa-youtube"></a>
@@ -654,6 +671,59 @@
             </a>
       </div>
 </div>
+</div>
+
+<div id="invite" class="invite">
+  <div class="invite-header">
+    <h1 class="invite-title">Краткосрочные миссионерские поездки на Донбасс</h1>
+      <button class="invitelink_button" onclick="toggleinvite();">ГЛАВНАЯ</button>
+  </div>
+    <div class="invitevideo-wrap">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FHFyR0LhvHk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    <div class="invite-container">
+        <div class="invite-description">
+            <p><b>Привет.</b> Рады, что ты смотришь это видео.  Это значит, что ты на пороге важного решения в своей жизни.</p>
+            <p><b>Что мы предлагаем:</b></p>
+            <ul>
+              <li>Краткий курс по благовестию от Игоря Туника</li>
+              <li>Питание, проживание</li>
+              <li>Возможность практичекого служения в одном из проектов движения "Церковь Без Стен"</li>
+              <li>Опыт который вы сможете маштабировать на проекты в своих поместных церквях</li>
+            </ul>
+            <p>Сегодня мир как никогда нуждается в людях, готовых взять ответственность и действовать. </p>
+            <p>Поэтому сегодня у тебя есть возможность стать частью Божьей работы на Донбассе , присоединившись к нам в одной из краткосрочных миссионерских поездок.</p>
+            <p></p>
+            <p>Если тебе интересно данное приключение, то заполни форму ниже, и мы свяжемся с тобой для дальнейшей координации действий.</p>
+            <p></p>
+            <p></p>
+            <!-- <p>ЕСЛИ У ТЕБЯ ВОЗНИКЛИ КАКИЕ-ЛИБО ВОПРОСЫ:</p>
+            <h2 class="email">Email</h2>
+      <a class="contactslinks" href="mailto:bezstenmission@gmail.com"><p>bezstenmission@gmail.com</p></a>
+      <h2 class="telephone">Телефон</h2>
+      <a class="contactslinks" href="tel:+380503925977"><p>+380(50)3925977</p></a> -->
+        </div>
+        <iframe class="formframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfPqdBD0z6f4BL0ejbt2Fm51Dx6HKBWhpvDyWz0p_ElnvvZaQ/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+    </div>
+    <div id="contacts" class="contacts">
+      <div id="ru-contacts" class="contacts-container">
+          <div class="contacts-overlay"></div>
+        <div class="contacts-headline">
+          <h1 class="contacts-title">КОНТАКТЫ
+              <div class="underline"></div>
+          </h1>   
+        </div>
+        <div class="headline-description">
+          <h2 class="adress">Oфис церкви</h2>
+          <p>Мирноград Светлый 13. кв.33</p>
+          <h2 class="email">Email</h2>
+          <a class="contactslinks" href="mailto:bezstenmission@gmail.com"><p>bezstenmission@gmail.com</p></a>
+          <h2 class="telephone">Телефон</h2>
+          <a class="contactslinks" href="tel:+380503925977"><p>+380(50)3925977</p></a>
+        </div>
+        </div>
+    </div>
+  </div>
 
 
 

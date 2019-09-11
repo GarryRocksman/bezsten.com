@@ -1,9 +1,15 @@
 checkMenu();
 checkLanguage();
 
+
+
 $('.moreaboutmissionerstitle').toggleClass('showitems');
 
 
+function toggleinvite() {
+  $('.maincontent').toggleClass('hidemaine');
+  $('.invite').toggleClass('showinvite');
+} 
 
 function togglemissioners() {
   $('.hiddenmissioners').toggleClass('showitems');
