@@ -141,7 +141,7 @@ html {
   left: 0;
   top: 0;
   width: 100%;
-  min-height: 450px;
+  height: 100%;
   background-color:var(--main-light-color);
   opacity: 0.9;
 }
@@ -238,6 +238,7 @@ html {
     width: 220px;
     font-size: 16px;
     margin: 4px 2px;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -691,7 +692,7 @@ html {
 }
 
 .headline-description {
-  margin-top: 150px;
+  margin-top: 130px;
   margin-right: 20px;
   z-index: 101;
   position: relative;
@@ -777,7 +778,7 @@ text-decoration: none;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .invite-header {
@@ -788,6 +789,8 @@ text-decoration: none;
   align-content: center;
   align-items: center;
 }
+
+
 
 .invite-header h1 {
   margin-left: 10px;
