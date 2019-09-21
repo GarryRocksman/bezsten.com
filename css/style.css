@@ -761,6 +761,31 @@ text-decoration: none;
   position: relative;
 }
 
+.mission-form-button {
+  background-color: #DAA520;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 300px;
+}
+
+
+a.mission-form-ref:active, 
+a.mission-form-ref:hover,  
+a.mission-form-ref {
+  text-decoration: none;
+  color: #1f2c30;
+}
+
+a.mission-form-ref:hover {
+  color:white;
+}
+
+
 .formframe {
   width: 100%;
   height: 2400px;
